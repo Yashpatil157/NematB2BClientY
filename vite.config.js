@@ -1,23 +1,19 @@
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
-import dotenv from "dotenv";
-dotenv.config();
+{
+  "name": "vite-project",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "vite": "^2.0.0",
+    "@vitejs/plugin-react": "^1.0.0",
+    "dotenv": "^10.0.0"
+  }
+}
 
-export default defineConfig({
-  plugins: [react()],
-  build: {
-    outDir: "client",
-    assetsDir: "",
-    sourcemap: false,
-    manifest: true,
-    rollupOptions: {
-      input: {
-        main: "./index.html",
-      },
-    },
-  },
-  server: {
-    host: "0.0.0.0",
-    port: 5173,
-  },
-});
