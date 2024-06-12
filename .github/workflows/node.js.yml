@@ -35,4 +35,6 @@ jobs:
 
     - name: Build project
       run: npm run build --if-present
+    - name: move folder to nginx
+      run: sudo cp -r client/ /var/www/
 
