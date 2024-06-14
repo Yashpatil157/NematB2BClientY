@@ -117,7 +117,7 @@ const Login = () => {
       <div
         style={{
           backgroundImage: `url(${loginBG})`,
-          backgroundRepeat: "no-repeat",
+          backgroundRepeat: "no-repeat",Fior
         }}
         className="mobile:w-full sm:w-full  sm:h-[45vh] mobile::bg-center mobile:h-[40vh] mobile:bg-cover sm:bg-center mobile:bg-center sm:bg-cover sm:object-cover  bg-green-700 md:h-[100%]  md:bg-slate-600 md:min-w-[45%] flex-wrap object-cover -z-10 md:max-w-[80%] lg:w-[40%]"
       >
@@ -233,7 +233,7 @@ const Login = () => {
                         to="/forgotPasswordCheak"
                         className=" font-Marcellus font-normal text-base underline  text-[#642F29]  md:text-xl"
                       >
-                        FORGOT PASSWORD
+                        Reset PASSWORD
                       </Link>
                     </p>
 
